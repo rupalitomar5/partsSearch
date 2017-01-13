@@ -22,9 +22,11 @@
 </head>
 <body>
 <form name='f' >
-    <select name="s" id="s" onfocus="move()">
-    </select>
+    <input type="text" id="s" onfocus="move()"/>
 
+    <select name="s" id="s1" >
+    </select>
+<input type="button" id="btn" onfocus="add()"/>
 </form>
 <script>
     function move()
@@ -35,7 +37,13 @@
         var T=document.createElement("option");
         T.innerHTML=q[i].productName;
         a.appendChild(T);
-    }}
+    }
+
+    }
+    function add()
+    {
+
+    }
     </script>
 </body>
 </html>
