@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var q;
+        var object=function(productName,productImage,color,size, weight, Manufacturer,Price){
+            this.productName=productName,
+            this.productImage=productImage,
+            this.color=color,
+            this.size=size,
+            this.weight=weight,
+            this.Manufacturer=Manufacturer,
+            this.Price=Price
+        }
+        q[0]= object('chair','chair','red','12','12','furniture','10');
+        q[1]=object('table','chair','red','12','12','furniture','10');
+        q[2]=object('table','chair','red','12','12','furniture','10');
+    </script>
+</head>
+<body>
+<form name='f' >
+    <select name="s" id="s" onfocus="move()">
+    </select>
+
+</form>
+<script>
+    function move()
+    {
+    var a=document.getElementById('s');
+    for (var i=0;i<q.length;i++)
+    {
+        var T=document.createElement("option");
+        T.innerHTML=q[i].productName;
+        a.appendChild(T);
+    }}
+    </script>
+</body>
+</html>
