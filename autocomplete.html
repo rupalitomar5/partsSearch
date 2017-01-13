@@ -28,6 +28,7 @@
     </select>
 <input type="button" id="btn" onfocus="add()"/>
 </form>
+<table id="tb1"></table>
 <script>
     function move()
     {
@@ -36,14 +37,53 @@
     {
         var T=document.createElement("option");
         T.innerHTML=q[i].productName;
+        T.setAttribute("value","opt"+i);
         a.appendChild(T);
     }
 
     }
     function add()
     {
+        var index=document.getElementById("s1");
 
-    }
+            var div = document.getElementById("tb1");
+            var T = document.createElement("tr");
+            var T1 = document.createElement("td");
+            T1.innerHTML =q[].productName;
+            T.appendChild(T1);
+            div.appendChild(T);
+        var div = document.getElementById("tb1");
+        var T = document.createElement("tr");
+        var T1 = document.createElement("td");
+        T1.innerHTML =q[].productImage;
+        T.appendChild(T1);
+        div.appendChild(T);
+        var div = document.getElementById("tb1");
+        var T = document.createElement("tr");
+        var T1 = document.createElement("td");
+        T1.innerHTML =q[].color;
+        T.appendChild(T1);
+        div.appendChild(T);
+        var div = document.getElementById("tb1");
+        var T = document.createElement("tr");
+        var T1 = document.createElement("td");
+        T1.innerHTML =q[].size;
+        T.appendChild(T1);
+        div.appendChild(T);
+        var div = document.getElementById("tb1");
+        var T = document.createElement("tr");
+        var T1 = document.createElement("td");
+        T1.innerHTML =q[].weight;
+        T.appendChild(T1);
+        div.appendChild(T);
+        var div = document.getElementById("tb1");
+        var T = document.createElement("tr");
+        var T1 = document.createElement("td");
+        T1.innerHTML =q[].Manufacturer;
+        T.appendChild(T1);
+        div.appendChild(T);
+        }
+
     </script>
 </body>
 </html>
