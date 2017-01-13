@@ -37,7 +37,7 @@
     {
         var T=document.createElement("option");
         T.innerHTML=q[i].productName;
-        T.setAttribute("value","opt"+i);
+        T.setAttribute("value",i);
         a.appendChild(T);
     }
 
@@ -49,7 +49,7 @@
             var div = document.getElementById("tb1");
             var T = document.createElement("tr");
             var T1 = document.createElement("td");
-            T1.innerHTML =q[].productName;
+            T1.innerHTML =q[index].productName;
             T.appendChild(T1);
             div.appendChild(T);
         var div = document.getElementById("tb1");
@@ -61,25 +61,25 @@
         var div = document.getElementById("tb1");
         var T = document.createElement("tr");
         var T1 = document.createElement("td");
-        T1.innerHTML =q[].color;
+        T1.innerHTML =q[index].color;
         T.appendChild(T1);
         div.appendChild(T);
         var div = document.getElementById("tb1");
         var T = document.createElement("tr");
         var T1 = document.createElement("td");
-        T1.innerHTML =q[].size;
+        T1.innerHTML =q[index].size;
         T.appendChild(T1);
         div.appendChild(T);
         var div = document.getElementById("tb1");
         var T = document.createElement("tr");
         var T1 = document.createElement("td");
-        T1.innerHTML =q[].weight;
+        T1.innerHTML =q[index].weight;
         T.appendChild(T1);
         div.appendChild(T);
         var div = document.getElementById("tb1");
         var T = document.createElement("tr");
         var T1 = document.createElement("td");
-        T1.innerHTML =q[].Manufacturer;
+        T1.innerHTML =q[index].Manufacturer;
         T.appendChild(T1);
         div.appendChild(T);
         }
